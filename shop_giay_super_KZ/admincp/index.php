@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Admincp</title>
+	<link rel="stylesheet" type="text/css" href="css/styleadmincp.css">
+	<link rel="stylesheet" href="../themify-icons/themify-icons.css">
+	<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+<?php
+ session_start();
+ if(!isset($_SESSION['dangnhap'])){
+ 	header('Location:login.php');
+ } 
+?>
+<body>
+	<h3 class="title_admin">Welcome to AdminPlace</h3>
+	<div class="wrapper">
+	<?php 
+			include("config/config.php");
+			include("modules/header.php");
+			include("modules/menu.php");
+			include("modules/main.php");
+			include("modules/footer.php");
+	?>
+	</div>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

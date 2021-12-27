@@ -1,0 +1,28 @@
+.col-2{
+    position: relative;
+}
+
+#prev{
+    text-transform: uppercase;
+    position: absolute;
+    top: 200px;
+    left: 2px;
+}
+#prev img:hover{
+    opacity: 0.9;
+}
+#prev img{
+    opacity: 0.2;
+}
+#next{
+    text-transform: uppercase;
+    position: absolute;
+    top: 200px;
+    right: 2px;
+}
+#next img{
+    opacity: 0.2;
+}
+#next img:hover{
+    opacity: 0.9;
+}
